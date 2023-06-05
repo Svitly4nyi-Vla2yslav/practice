@@ -320,3 +320,97 @@
 // wordsArr.shift();
 // console.log(`>${wordsArr.join(' ')}<`)
 
+//? Напиши скрипт, який "розгортає" рядок (зворотній порядок букв) 
+//? і виводить його в консоль.
+// const string = "Welcome to future";
+// // // let newString = '';
+// // // for (let i = string.length - 1;i >= 0;i -= 1){
+// // // newString += string[i]
+// // // }
+// // // console.log(newString)
+// // const charsArr = string.split('');
+// // const reversArr = charsArr.reverse();
+// // console.log(reversArr.join(''))
+// console.log(string.split('').reverse().join(''));
+
+//?!--------------- Cортування масиву із циклом
+//? Напиши скрипт сортування масиву рядків в алфавітному порядку за першою 
+//? літерою елемента.
+// const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+// for (let i = 0; i < langs.length; i += 1){
+//     for (let j = i + 1; j < langs.length; j += 1){
+//         if (langs[i] > langs[j]){
+//          const thirdValue = langs[i];
+//          langs[i] = langs[j];
+//          langs[j] = thirdValue
+//         }
+//     }
+// }
+// console.log(langs)
+
+//!    Пошук елемента!
+//? Напиши скрипт пошуку найменшого числа у масиві. Код повинен працюваати
+//? для будь-якого масиву чисел. Використовуй цикл для розвязання задачі.
+// const numbers = [2, 17, 94, 1, 23, 37];
+// // let min = numbers[0];
+// // for (let number of numbers){
+// //     if (number < min){
+// //         min = number
+// //     }
+// // }
+// // console.log(min);
+// let min ;
+// for (let number of numbers){
+//     if (min === undefined || number < min){
+//         min = number
+//     }
+// }
+// console.log(min);
+
+//!  ----------------МОДУЛЬ 2 УРОК 4-------------------------------------
+//? індекс маси тіла необхідно обкруглити до однієї цифри після коми
+// let weight = `88,3`;
+// let height = `1.75`;
+
+// console.log(newWeight)
+
+// console.log(newHeight)
+// function calcBMI(weight, height){
+// const newWeight = Number(weight.replace(',', '.'));
+// const newHeight = Number(height.replace(',', '.'));
+// return (newWeight / Math.pow(newHeight, 2)).toFixed(1)
+// }
+// const bmi = calcBMI( '88,3', '1.75')
+// console.log(bmi)
+
+//? Найменше з чисел  
+//? Напиши функцію "min(a, b)", яка повертає найменше з чисел "a" та "b".
+// function min(a, b){
+//   return Math.min(a, b)  
+// }
+
+// console.log(min(2, 5))
+// console.log(min(3, -1))
+// console.log(min(1, 1))
+
+//? Напиши функцію "getRectArea(dimensions)" для обчислення площі прямокутника 
+//? зі сторона, значення яких зберігається у змінной "values" у вигляді рядка.
+//?  Значення гарантовано розділені пробілом.
+// function getRectArea(dimensions){
+// // const values = "8 11";
+// const valueArr = dimensions.split(" ");
+// const width = Number(valueArr[0]);
+// const height = Number(valueArr[1]);
+// return width * height;
+// }
+// console.log(getRectArea('8 11'))
+
+const apartment = {
+    descr: "Spacious apartment in the city center",
+    rating: 4,
+    price: 2153,
+  };
+  // Change code below this line
+  const keys = Object.keys(apartment);
+  const values = Object.values(apartment);
+

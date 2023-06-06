@@ -404,13 +404,51 @@
 // return width * height;
 // }
 // console.log(getRectArea('8 11'))
+//!----------- 06\06\2023------------------------------------
+//? Напиши функцію `logItems(items)`, яка отримує масив та використовує
+//? цикл `for` який для кожного елемента масиву буде виводити в консоль
+//? повідомлення у форматі "<номер елемента>" - "<значення елемента>".
+//? Нумерація елементів повинна починатися з '1'.
 
-const apartment = {
-    descr: "Spacious apartment in the city center",
-    rating: 4,
-    price: 2153,
-  };
-  // Change code below this line
-  const keys = Object.keys(apartment);
-  const values = Object.values(apartment);
+//? Наприклад для першого елемента масиву ['Mango', 'Poly', 'Ajax',] з 
+//? індексом буде виведено "1 - Mango" а для індексу 2 виведе "3 - Ajax"
+ 
+// function logItems(itemsArr){
+//   for (let i = 0; i < itemsArr.length; i += 1){
+//     console.log(`Element ${i + 1}:`, itemsArr[i])
+//   }
+// }
+// logItems(['Mango', 'Poly', 'Ajax']);
+// logItems(["🍌", "🍋", "🍎", "🍇", "🍑"]);
 
+//? Напиши функцію 'printContactsInfo(names, phones)' яка виводить у консоль
+//? ім'я та телефонний номер користувача. У параметри `names` та 'phones'
+//? будуть передані рядки імен та телефонних номерів, розділені комами.
+//? Порядковий номер імен та телефонів у рядках вказують на відповідність.
+//? Кількість імен і телефонів гарантовано однакова.
+//? 
+// function printContactsInfo(names, phones){
+//    const namesArr = names.split(",");
+//  const phonesArr = phones.split(",");
+//  for (let i = 0; i < namesArr.length; i += 1){
+// console.log(`${namesArr[i]}: `, phonesArr[i]);
+//  }
+// }
+//  printContactsInfo(
+// 'Jacob,William,Solomon,Artemis',
+// "89001234567,89001112233,890055566377,890055566300"
+// )
+
+// //? Напиши функцію 'findLargestNumber(numbers)' яка шукає найбільше число
+// //? в масиві. 
+// function findLargestNumber(numbersArr){
+//   let max
+// for (let number of numbersArr){
+//   if (max === undefined || number > max){
+//     max = number
+//   }
+// }
+// return max
+// }
+// console.log(findLargestNumber([2, 17, 94, 1, 23, 37]));
+// console.log(findLargestNumber([49, 4, 7, 83, 12]));

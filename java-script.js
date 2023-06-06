@@ -452,3 +452,64 @@
 // }
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37]));
 // console.log(findLargestNumber([49, 4, 7, 83, 12]));
+
+//? Напиши функцію "formatTime(minutes)" яка пререведе значення "minutes"
+//? (кількість хвилин ) у рядок у форматі годин та хвилин "hh:mm"
+// function formatTime(minute){
+//     const hours = Math.floor(minute / 60);
+//     const minutes = minute % 60;
+   
+  
+//     // const hoursString = hours < 10 ? `0${hours}` : hours;
+//     // const minuteString = minutes < 10 ? `0${minutes}` : minutes;
+//     const hoursString = `${hours}`.padStart(2, 0); 
+//     const minuteString = `${minutes}`.padStart(2, 0); 
+  
+//     return `${hoursString}:${minuteString}`
+   
+// }
+// console.log(formatTime(70))
+// console.log(formatTime(450))
+// console.log(formatTime(1441))
+
+//? Напишіть функції для роботи з колекцією навчальних курсів "courses": 
+//? 
+//? - додає курс до кінця колекції
+//? - видаляє курс із колекції
+//? - змінює ім"я на нове
+//todo const courses = ['python', 'javascript', 'c++', 'haskel', 'php'];
+// function addCourse(name){
+//     if ( courses.includes(name)){
+//     console.log(`Ви вже маєте такий курс`)
+// } else 
+// courses.push(name)   
+// }
+
+// addCourse(`Express`);
+// console.log(courses);
+// addCourse(`python`);
+// function removeCourse(name){
+//     if (courses.includes(name)){
+//       const coursesIndex = courses.indexOf(name);
+//       courses.splice(coursesIndex, 1);
+   
+// } else {
+//     // courses.push(name);
+//       console.log(`Курс із таким ім"ям не знайдено`)
+// }
+// }
+// removeCourse('python');
+// console.log(courses);
+// removeCourse('c+++');
+// function updateCourse(oldName, newName){
+//     if (courses.includes(oldName)){
+//               const coursesIndex = courses.indexOf(oldName);
+//               courses.splice(coursesIndex, 1, newName);
+           
+//         } else {
+//             // courses.push(name);
+//               console.log(`Курс із таким ім"ям не знайдено`)
+//         }
+// }console.log(courses);
+// updateCourse('c++', `VLAD`);
+// console.log(courses);

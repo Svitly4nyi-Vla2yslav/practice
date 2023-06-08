@@ -118,7 +118,7 @@
 //     for (const transaction of this.transactions) {
 //       if (transaction.type === type) {
 //         total += transaction.amount;
-       
+
 //       }
 //     }
 //     return total;
@@ -136,3 +136,125 @@
 // console.log(account.getTransactionTotal(Transaction.WITHDRAW))
 // console.log(account.transactions)
 
+// ! -----Module 3 \ lesson 6 ------------------------------------
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/dfsf/dfsdfs/sdfsdfd/fsdsdsd/ddd.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// const {
+//   today: {
+//     low: todayLow,
+//     high: todayHigh,
+//     icon: todayIcon = 'https://www.flaticon.com/dfsf/dfsdfs/sdfsdfd/fsdsdsd/ddd.svg',
+//   },
+//   tomorrow: {
+//     low: tomorrowLow,
+//     high: tomorrowHigh,
+//     icon: tomorrowIcon = 'https://www.flaticon.com/dfsf/dfsdfs/sdfsdfd/fsdsdsd/ddd.svg',
+//   },
+// } = forecast;
+// console.log(todayLow, todayHigh, todayIcon, tomorrowLow, tomorrowHigh, tomorrowIcon);
+
+//?!  Деструктуризація ------------------------------------
+//? Перепиши функцію так щоб вона приймала один об'єкт парпметрів
+//? замість набору незалежних.
+// function calcBMI(params) {
+//     console.log(params);
+//     const { weight, height} = params
+//   const numericWeight = Number(weight.replace(',', '.'));
+//   const numericHeight = Number(height.replace(',', '.'));
+//   return Number((numericWeight / numericHeight ** 2).toFixed(1));
+// }
+// console.log(
+//   calcBMI({
+//     weight: '88,3',
+//     height: '1.75',
+//   })
+// );
+// console.log(
+//   calcBMI({
+//     weight: '68,3',
+//     height: '1.65',
+//   })
+// );
+// console.log(
+//   calcBMI({
+//     weight: '118,3',
+//     height: '1.95',
+//   })
+// );
+
+//? Перепиши функцію так щоб вона приймала один об'єкт парпметрів
+//? замість набору незалежних.
+// function printContactsInfo(props){
+//     const {names, phones} = props;
+//     const nameList = names.split(',');
+//     const phoneList = phones.split(',');
+//     for (let i = 0; i < nameList.length; i += 1){
+//         console.log(`${nameList[i]}: ${phoneList[i]}`);
+//     }
+// }
+// printContactsInfo({
+//     names: 'Vlad,Luba,Julian,Eva',
+//     phones: '384837384,859499304,848539294,84958294739'
+// })
+
+//! Глибока деструктуризація
+//? Перепиши функцію так щоб вона приймала один об'єкт парпметрів
+//? замість набору незалежних.
+
+// function getBotReport(props) {
+//   const {
+//     companyName,
+//     bots: { repair: repairBots, defence: defenceBots },
+//   } = props;
+//   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// }
+
+// console.log(
+//   getBotReport({
+//     companyName: 'Cyberdyne Systems',
+//     bots: {
+//       repair: 150,
+//       defence: 50,
+//     },
+//   })
+// );
+
+//? Напиши функцію так щоб приймала об'єкт параметрів із властивостями 'companyName'
+//? та 'stock' та виводила репорт про кількість товарів на складі будь-якой
+//? компанії.
+// function getStockReport(props){
+// const {companyName, stock} = props;
+// let sum = 0;
+// for (const stockValue of Object.values(stock)){
+//     sum += stockValue;
+// }
+// return `${companyName} has ${sum} items in stock!`
+// }
+// console.log(
+//   getStockReport({
+//     companyName: 'Cyberdyne Systems',
+//     stock: {
+//       repairBots: 150,
+//       defenceBots: 50,
+//     },
+//   }),
+// );
+// console.log(
+//     getStockReport({
+//         companyName: 'Belacci',
+//         stock:{
+//             shoes: 20,
+//             skirts: 10,
+//             hats: 5,
+//         }
+//     })
+// )

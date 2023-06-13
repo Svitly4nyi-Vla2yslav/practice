@@ -258,3 +258,151 @@
 //         }
 //     })
 // )
+// !  автоперевірка ===================================================================
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+
+//   const hexColors = [];
+//   const rgbColors = [];
+//   // Change code below this line
+
+//   for (const color of colors) {
+//     const {
+// hex,
+// rgb,
+//     } = color;
+
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb);
+//   };
+//   console.log(hexColors)
+//   console.log(rgbColors)
+// ?========================================================
+// const forecast = {
+//     today: {
+//       low: 28,
+//       high: 32,
+//       icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//       low: 27,
+//       high: 31,
+//     },
+//   };
+//   // Change code below this line
+//   const {
+//     today:{
+// low: lowToday,
+// high: highToday,
+// icon: todayIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//     },
+//     tomorrow:{
+// low: lowTomorrow,
+// high: highTomorrow,
+// icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//     },
+//   } = forecast;
+// //   const highToday = forecast.today.high;
+// //   const lowToday = forecast.today.low;
+// //   const todayIcon = forecast.today.icon;
+
+// //   const highTomorrow = forecast.tomorrow.high;
+// //   const lowTomorrow = forecast.tomorrow.low;
+// //   const tomorrowIcon = forecast.tomorrow.icon;
+
+// !------------------------------------------------------------
+// // Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   // const todayLow = forecast.today.low;
+//   // const todayHigh = forecast.today.high;
+//   // const tomorrowLow = forecast.tomorrow.low;
+//   // const tomorrowHigh = forecast.tomorrow.high;
+//   const {
+//     today: { low: todayLow, high: todayHigh },
+//     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+//   } = forecast;
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// calculateMeanTemperature({
+//   today: { low: 28, high: 32 },
+//   tomorrow: { low: 25, high: 29 },
+// });
+// console.log(
+//   calculateMeanTemperature({
+//     today: { low: 28, high: 32 },
+//     tomorrow: { low: 25, high: 29 },
+//   })
+// );
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(bestScore)
+// console.log(worstScore)
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+// todo===========================================================
+// const defaultSettings = {
+//     theme: "light",
+//     public: true,
+//     withPassword: false,
+//     minNumberOfQuestions: 10,
+//     timePerQuestion: 60,
+//   };
+//   const overrideSettings = {
+//     public: false,
+//     withPassword: true,
+//     timePerQuestion: 30,
+//   };
+//   // Change code below this line
+//   const finalSettings = {...defaultSettings, ...overrideSettings};
+
+//   console.log(finalSettings.theme)
+//   console.log(finalSettings.public)
+//   console.log(finalSettings.withPassword)
+//   console.log(finalSettings.minNumberOfQuestions)
+//   console.log(finalSettings.timePerQuestion)
+//   !44444444444444444444444444444444444444444444444444
+// function makeTask(data) {
+//     const completed = false;
+//     const category = "General";
+//     const priority = "Normal";
+//     // Change code below this line
+//     return { completed, category, priority, ...data}
+//     // Change code above this line
+//   } 
+// ! Я в шоці!!😳😳😳😳😳😳😳😳😳😳
+// console.log(makeTask({})) 
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }))
+// console.log(makeTask({ category: "Finance", text: "Take interest" }))
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }))
+// console.log(makeTask({ text: "Buy bread" })) 
+//? Використовуючи операцію rest, доповни код функції add() таким чином, щоб 
+//? вона приймала будь-яку кількість аргументів, рахувала і повертала їх суму.
+//! Change code below this line
+// function add(...args) {
+//   let total = 0;
+//   for (let arg of args){
+//     total += arg;
+//   }
+//   return total;
+//   // Change code above this line
+// }

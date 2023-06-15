@@ -267,8 +267,59 @@
 // const result3 = filter(fruits, getFruitsWithQuantity);
 // console.log(result3)
 // !!!!!!!   =>----------------------------------------------------------
-//* const getFruitsWithQuantity = fruit => fruit.quantity >= 120;        
-//*                                                                        
+//* const getFruitsWithQuantity = fruit => fruit.quantity >= 120;
+//*
 
 //todo const result3 = filter(fruits, fruit => fruit.quantity >= 120);
 // console.log(result3)
+
+// ?   Рефакторинг в стрілочні функції------
+// const numbers = [1, 5, 2, 4, 3];
+// // const greaterThenTwo = numbers.filter(function (num) {
+// //     return num > 2;
+// // });
+// const greaterThenTwo = numbers.filter(num => num > 2);
+// console.log(greaterThenTwo);
+
+// const multByTwo = greaterThenTwo.map(num => num * 3);
+// // const multByTwo = greaterThenTwo.map(function (num) {
+// //     return num * 3;
+// // });
+// console.log(multByTwo);
+// !-----------------------------------------------------------------
+
+// const callback1 = value => value >= 3;
+
+// const result1 = [1, 2, 3, 4, 5].filter(callback1);
+// console.log(result1);
+
+// const callback2 = value => value <= 4;
+
+// const result2 = [1, 2, 3, 4, 5, 6, 7, 8].filter(callback2);
+// console.log(result2);
+// !-----------------------------------------------------------------
+// const salaryManagerFactory = (employeeName, baseSalary = 0) => {
+//   let salary = baseSalary;
+
+//   const changeBy = function (amount) {
+//     salary += amount;
+//   };
+//   return {
+//     raise(amount) {
+
+//       if (amount > 5000){
+//         return "А ти батенька не зажрався?😄"
+//       }
+//       salary += amount;
+//     },
+//     lower(amount) {
+//         salary -= amount;
+//     },
+//     current() {
+//       return `Поточна зарплатa ${employeeName} - ${salary}$`;
+//     },
+//   };
+// };
+// const salaryManager = salaryManagerFactory('Vlad', 5000);
+// console.log(salaryManager.raise(5001))
+// console.log(salaryManager.current());

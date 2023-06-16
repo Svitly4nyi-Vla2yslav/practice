@@ -323,3 +323,178 @@
 // const salaryManager = salaryManagerFactory('Vlad', 5000);
 // console.log(salaryManager.raise(5001))
 // console.log(salaryManager.current());
+// ! Рефакторинг for...of => forEach
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach((items) => {
+//     totalPrice += items;
+//     });
+
+//   // Change code above this line
+//   return totalPrice;
+// };
+// !
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+// // Change code above this line
+// return filteredNumbers;
+// };
+// console.log(filterArray([1, 2, 3, 4, 5], 5))
+// console.log(filterArray([12, 24, 8, 41, 76], 20))
+// console.log(filterArray([12, 24, 8, 41, 76], 38))
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// !
+// function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//     // Change code below this line
+
+//     firstArray.forEach(array => {
+//         if (secondArray.includes(array)) {
+//             commonElements.push(array);
+//         }
+//     })
+//     return commonElements;
+//     // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) );
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+//? Array.prototype.forEach(callback(currentValue, index, array), thisArg)
+//? - Поелементно перебирае оригінальний масив.
+//? - Нічого не повертає
+//? - Замінює класичний for, якщо не потрібно прирвати цикл.
+
+// const numbers = [5, 10, 15, 20, 25];
+// numbers.forEach(function (number, index, array) {
+//     console.log('number', number);
+// })
+//! Рефакторинг в стрілочну функцію
+// // Change code below this line
+
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+//   // Change code above this line
+
+// console.log(calculateTotalPrice(5, 100));
+// console.log(calculateTotalPrice(8, 60));
+// console.log(calculateTotalPrice(3, 400));
+// !
+// Change code below this line
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach( (item) => totalPrice += item);
+
+//   return totalPrice;
+// }
+// // Change code above this line
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// !
+// // Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach( (number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+// !
+// // Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach( (element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]))
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+// !
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//     const result = [];
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       result.push(numbers[i] + value);
+//     } else {
+//         result.push(numbers[i])
+//     }
+//   }
+//     return result;
+//   // Change code above this line
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+// !--------------------- Метод map(callback)--------------------------------------------------------
+// const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
+// // Change code below this line
+// const planetsLengths = planets.map(planet => planet.length);
+
+// console.log(planets)
+// console.log(planetsLengths);
+// !-----------------------------------------------------------------
+//? Використовуючи метод map(), зроби так, щоб у змінній titles вийшов масив назв
+//? книг(властивість title) з усіх об'єктів масиву books.
+//? Оголошена змінна books
+//? Значення змінної books - це масив
+//? Оголошена змінна titles
+//? Значення змінної titles - це масив ["The Last Kingdom", "Beside Still Waters", "The Dream of a Ridiculous Man", "Redder Than Blood", "Enemy of God"]
+//? Для перебирання масиву books використовується метод map() як чиста функція
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books.map(titles1 => titles1.title);
+// console.log(titles);

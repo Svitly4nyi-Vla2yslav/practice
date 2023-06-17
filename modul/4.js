@@ -441,7 +441,7 @@
 // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
 // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
-// !
+//todo ----Чиста функція---- //////////////////////////////////////////////////////////////
 // function changeEven(numbers, value) {
 //   // Change code below this line
 //     const result = [];
@@ -460,41 +460,3 @@
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
 // console.log(changeEven([17, 24, 68, 31, 42], 100));
 // console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
-// !--------------------- Метод map(callback)--------------------------------------------------------
-// const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
-// // Change code below this line
-// const planetsLengths = planets.map(planet => planet.length);
-
-// console.log(planets)
-// console.log(planetsLengths);
-// !-----------------------------------------------------------------
-//? Використовуючи метод map(), зроби так, щоб у змінній titles вийшов масив назв
-//? книг(властивість title) з усіх об'єктів масиву books.
-//? Оголошена змінна books
-//? Значення змінної books - це масив
-//? Оголошена змінна titles
-//? Значення змінної titles - це масив ["The Last Kingdom", "Beside Still Waters", "The Dream of a Ridiculous Man", "Redder Than Blood", "Enemy of God"]
-//? Для перебирання масиву books використовується метод map() як чиста функція
-// const books = [
-//   {
-//     title: 'The Last Kingdom',
-//     author: 'Bernard Cornwell',
-//     rating: 8.38,
-//   },
-//   {
-//     title: 'Beside Still Waters',
-//     author: 'Robert Sheckley',
-//     rating: 8.51,
-//   },
-//   {
-//     title: 'The Dream of a Ridiculous Man',
-//     author: 'Fyodor Dostoevsky',
-//     rating: 7.75,
-//   },
-//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
-//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
-// ];
-// // Change code below this line
-
-// const titles = books.map(titles1 => titles1.title);
-// console.log(titles);

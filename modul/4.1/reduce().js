@@ -35,8 +35,67 @@ const players = [
 // );
 // console.log(totalSalary);
 //?
-const totalTimePlayed = players.reduce(
-  (totalTime, player) => totalTime + player.timePlayed,
-  0,
+// const totalTimePlayed = players.reduce(
+//   (totalTime, player) => totalTime + player.timePlayed,
+//   0,
+// );
+// console.table(totalTimePlayed);
+// !
+// const cart = [
+//   { label: '🍎', price: 100, quantity: 2 },
+//   { label: '🍌', price: 120, quantity: 3 },
+//   { label: '🍋', price: 70, quantity: 4 },
+// ];
+// const totalAmount = cart.reduce(
+//   // (total, item) => total + item.price * item.quantity, //? aбо
+//   (total, {price, quantity}) => total + price * quantity,
+//   0
+// );
+// console.log(totalAmount);
+
+const tweets = [
+  { id: '000', likes: 5, tags: ['js', 'nodejs'] },
+  { id: '001', likes: 2, tags: ['html', 'css'] },
+  { id: '002', likes: 17, tags: ['html', 'js', 'nodejs'] },
+  { id: '003', likes: 8, tags: ['css', 'react'] },
+  { id: '004', likes: 0, tags: ['js', 'nodejs', 'react'] },
+];
+// const likes = tweets.reduce((totalLikes, tweet) => totalLikes + tweet.likes, 0);
+// console.log(likes); // 32
+// const countLikes = tweets => {
+//   return tweets.reduce((totalLikes, tweet) => totalLikes + tweet.likes, 0);
+// };
+// !
+// console.log(countLikes(tweets)); // 32
+const allTags = tweets.reduce(
+  (oldAcc, tweet) => [...oldAcc, ...tweet.tags],
+  []
 );
-console.table(totalTimePlayed);
+// // // tags.push(...tweet.tags);
+// // // return tags;
+// console.log(allTags);
+// const tagsStats = allTags.reduce((acc, tag) => {
+//   console.log(acc);
+//   if (acc[tag]) {
+//     return acc;
+//   }
+//   acc[tag] = 1;
+//   return acc;
+// }, {});
+// console.log(tagsStats);
+// !
+// const tagsStats = allTags.reduce((acc, tag) => ({
+//   ...acc,
+//   [tag]: acc[tag] ? acc[tag] + 1 : 1,
+// }));
+// return acc[tag] ? { ...acc, [tag]: acc[tag] + 1 } : { ...acc, [tag]: 1 };
+// console.log(tagsStats);
+// // // !
+// const user = {
+//   name: 'Mango',
+// };
+// const key = 'name'
+// console.log(user[key]);
+
+
+

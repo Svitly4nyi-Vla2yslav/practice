@@ -67,12 +67,12 @@ const tweets = [
 // };
 // !
 // console.log(countLikes(tweets)); // 32
-const allTags = tweets.reduce(
-  (oldAcc, tweet) => [...oldAcc, ...tweet.tags],
-  []
-);
-// // // tags.push(...tweet.tags);
-// // // return tags;
+// const allTags = tweets.reduce(
+//   (oldAcc, tweet) => [...oldAcc, ...tweet.tags],
+//   []
+// );
+// // // // tags.push(...tweet.tags);
+// // // // return tags;
 // console.log(allTags);
 // const tagsStats = allTags.reduce((acc, tag) => {
 //   console.log(acc);

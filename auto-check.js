@@ -360,7 +360,7 @@ const users = [
 // const getActiveUsers = (users) => {
 //   const activeUsers = users.filter(user => !user.isActive);
 //   return activeUsers;
-   
+
 // };
 // console.log(getActiveUsers(users))
 // Change code above this line
@@ -403,3 +403,67 @@ const users = [
 // // Change code above this line
 
 // console.log(getUserWithEmail(users, 'elmahead@omatom.com'));
+// !
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, playtime) => acc + playtime);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// !
+// console.log(totalPlayTime)
+// const numbers = [5, 10, 15, 20, 25];
+// const total = numbers.reduce((acc, number) => {
+//     console.log('number', number);
+//     console.log('acc', acc);
+//     return acc + number;
+// }, 0);
+// !------------------------------------------------------------------
+// const players = [
+//   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Ajax', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce(
+//   (totalTime, { playtime, gamesPlayed }) =>
+//     totalTime + playtime / gamesPlayed,
+//   0
+// );
+// const averagePlayTime = totalAveragePlaytimePerGame / players.length;
+
+// console.log(totalAveragePlaytimePerGame);
+// console.log(averagePlayTime);
+// !
+// const totalTimePlayed = players.reduce(
+//   (totalTime, player) => totalTime + player.timePlayed,
+//   0,
+// );
+// !--------------------
+// // Change code below this line
+// const calculateTotalBalance = users => {
+//   const totalBalance = users.reduce((acc, { balance }) => acc + balance, 0);
+//   return totalBalance;
+
+// };
+//! Change code above this line
+// Change code below this line
+// const getTotalFriendCount = users => {
+//   const totalFriends = users.reduce(
+//     (acc, userName) => acc + userName.friends.length,
+//     0
+//   );
+//   return totalFriends;
+// };
+// console.log(getTotalFriendCount)
+//! Change code above this line
+// !----------------------------

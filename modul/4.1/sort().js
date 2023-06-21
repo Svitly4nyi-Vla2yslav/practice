@@ -48,3 +48,13 @@ const players = [
 // );
 
 // console.table(sortedByWortsPlayer);
+const byName = [...players].sort((a, b) => {
+    const result = a.name[0] > b.name[0];
+    if (result) {
+        return -1;
+    }
+    if (!result) {
+        return 1;
+    }
+});
+// console.table(byName);

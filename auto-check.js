@@ -467,3 +467,121 @@ const users = [
 // console.log(getTotalFriendCount)
 //! Change code above this line
 // !----------------------------
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+// ];
+// Change code below this line
+
+// const sortedByAuthorName = [...books].sort((nameA, nameB) =>
+//   nameA.author.localeCompare(nameB.author)
+// );
+
+// const sortedByReversedAuthorName = [...books].sort((nameA, nameB) =>
+//   nameB.author.localeCompare(nameA.author)
+// );
+
+// const sortedByAscendingRating = [...books].sort(
+//   (ratingA, ratingB) => ratingA.rating - ratingB.rating
+// );
+
+// const sortedByDescentingRating = [...books].sort(
+//   (ratingA, ratingB) => ratingB.rating - ratingA.rating
+// );
+
+// console.table(sortedByAuthorName);
+// console.table(sortedByReversedAuthorName);
+// console.table(sortedByAscendingRating);
+// console.table(sortedByDescentingRating);
+// Change code below this line
+//? const sortByAscendingBalance = users.sort(
+//?   (sortA, sortB) => sortA.balance - sortB.balance
+//? );
+// const sortByAscendingBalance = users => {
+//   const sortBalance = users.sort(
+//     (sortA, sortB) => sortA.balance - sortB.balance
+//   );
+//   return sortBalance
+// };
+
+// Change code above this line
+//? console.table(sortByAscendingBalance);
+
+// Change code below this line
+// const sortByDescendingFriendCount = users => {
+//   return [...users].sort((a, b) => b.friends.length - a.friends.length);
+// };
+// Change code above this line
+//? console.table(sortByDescendingFriendCount);
+
+// Change code below this line
+// const sortByName = users => {
+//   return [...users].sort((nameA, nameB) =>
+//     nameA.name.localeCompare(nameB.name)
+//   );
+// };
+//! Change code above this line
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   {
+//     title: 'The Dreams in the Witch House',
+//     author: 'Howard Lovecraft',
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// Change code below this line
+
+// const names = [...books]
+//   .filter(ratingFilter => ratingFilter.rating > MIN_BOOK_RATING)
+//   .map(nameAuthor => nameAuthor.author)
+//   .sort((nameA, nameB) => nameA.localeCompare(nameB));
+// console.log(names);
+//! Change code below this line
+// const getNamesSortedByFriendCount = users => {
+//   return [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//     .map(friend => friend.name);
+// };
+//! Change code above this line
+// console.table([...users])
+
+// const getSortedFriends = users => {
+//   return [...users]
+//     .flatMap(user => user.friends)
+//     .filter((elem, index, array) => array.indexOf(elem) === index)
+//     .sort((a, b) => a.localeCompare(b));
+// };
+// console.log([...users])

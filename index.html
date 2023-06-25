@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      button {
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+      }
+      .counter > p {
+        margin: 0;
+        font-size: 48px;
+        font-family: monospace;
+      }
+    </style>
   </head>
   <body>
-    <button class="js-button">
+    <!-- !  this -->
+    <div class="counter"> 
+      <button class="js-descrement">Зменшить🥶</button>
+      <p class="js-value">0</p>
+      <button class="js-increment">🥵Збільшить</button>
+    </div>
+    <!-- !  this -->
+    <!-- <button class="js-button">
       це кнопка
       <span role="image" aria-label="іконка чарівника">🧙‍♂️</span>
-    </button>
+    </button> -->
     <script src="
 https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
 "></script>
@@ -19,6 +45,8 @@ https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
     <script src="./java-script1.js" type="module"></script>
     <script src="./modul/4.js" type="module"></script>
     <script src="./modul/5.0.js/this.js" type="module"></script>
+    <script src="./modul/5.0.js/prototype_obyect.js" type="module"></script>
+    <script src="./modul/5.0.js/oop_entities.js" type="module"></script>
     <script src="./modul/4.1/map().js" type="module"></script>
     <script src="./modul/4.1/filter().js" type="module"></script>
     <script src="./modul/4.1/find().js" type="module"></script>

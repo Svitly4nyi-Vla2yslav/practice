@@ -585,3 +585,79 @@ const users = [
 //     .sort((a, b) => a.localeCompare(b));
 // };
 // console.log([...users])
+// !                      ====
+// !!                    ||___            💛
+// !                      ___||  MODUL    💙
+// const parent = {
+//   name: 'Stacey',
+//   surname: 'Moore',
+//   age: 54,
+//   heritage: 'Irish',
+// };
+// // Change code below this line
+
+// const child = Object.create(parent);
+
+// // Change code above this line
+// child.name = 'Jason';
+// console.log(child.hasOwnProperty('name'));
+// child.age = 27;
+// console.log(parent.hasOwnProperty('heritage'));
+// console.log(parent.hasOwnProperty('surname'));
+// console.log(child.name);
+// console.log(child.hasOwnProperty('surname'));
+// console.log(child.hasOwnProperty('heritage'));
+// console.log(child.age);
+// !000000000000000000000000000
+// class Car {
+//   // Change code below this line
+//   constructor({brand, model, price}) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code above this line
+// }
+// ;
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }))
+// !111111111
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code below this line
+//   getPrice() {
+//     return this.price;
+//   }
+//   changePrice(newPrice) {
+//     this.price = newPrice;
+//   }
+
+//   // Change code above this line
+// }
+// !0000000000
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+    
+//    return this.items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//     this.items = this.items.filter(item => item !== itemToRemove);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem('Droid');
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem('Prolonger');
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]

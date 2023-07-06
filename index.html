@@ -5,8 +5,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body {
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <style>
+      /* ======================================
+
+1 - Imported Fonts
+
+ ===================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+/* ======================================
+
+2 - General Properties
+
+ ===================================== */
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1024px;
+    background-color: #eeeeee;
+}
+
+blockquote {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    color: #555555;
+}
+
+hr {
+    border: 0.5px dotted #bbbbbb;
+}
+
+/* ======================================
+
+3 - Element-specific properties
+
+ ===================================== */
+
+#main {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px hsl(0, 0%, 80%);
+}
+
+#title {
+    text-align: center;
+    font-family: "Pinyon Script", cursive;
+    font-size: 4rem;
+}
+
+#img-div {
+    text-align: center;
+    margin: auto;
+}
+
+#img-div img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px hsl(0, 0%, 80%);
+}
+
+#img-caption {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+#tribute-info {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+#tribute-info ul {
+    text-align: left;
+}
+
+#tribute-info li {
+    /* css goes here */
+}
+
+#intro {
+    margin: 30px auto 30px auto;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#quote {
+    margin: 70px auto 50px auto;
+    background-image: url("https://www.damienvassart.com/test/fcc/responsive/img/qmarks.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ======================================
+
+4 - Media queries
+
+ ===================================== */
+
+@media screen and (max-width: 440px) {
+    #title {
+        text-align: center;
+        font-family: "Pinyon Script", cursive;
+        font-size: 2rem;
+    }
+
+    #img-caption {
+        font-size: 0.6rem;
+    }
+
+    #intro {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 441px) and (max-width: 768px) {
+    #title {
+        text-align: center;
+        font-family: "Pinyon Script", cursive;
+        font-size: 2.9rem;
+    }
+
+    #img-caption {
+        font-size: 0.8rem;
+    }
+
+    #intro {
+        font-size: 0.9rem;
+    }
+}
+      /* body {
         font-family: sans-serif;
       }
       button {
@@ -22,8 +166,8 @@
         margin: 0;
         font-size: 48px;
         font-family: monospace;
-      }
-    </style>
+      } */
+    </style> -->
   </head>
   <body>
     <!-- !  this -->
@@ -39,10 +183,32 @@
       <div element id="element-2" class="element">Element-2</div>
     </div> -->
 
-    <!-- <button class="js-button">
+    <button>
       це кнопка
-      <span role="image" aria-label="іконка чарівника">🧙‍♂️</span>
-    </button> -->
+      <span role="image" aria-label="іконка чарівника" >🧙‍♂️</span>
+    </button>
+    <div class="counter">0</div>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      button {
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        font-size: 48px;
+      }
+      .counter > p {
+        margin: 0;
+        font-size: 48px;
+        font-family: monospace;
+      }
+    </style>
     <!-- <script src="
 https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
 "></script> -->
@@ -50,7 +216,7 @@ https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
     <!-- <script src="./java-script.js" type="module"></script> -->
     <!-- <script src="./java-script1.js" type="module"></script> -->
     <!-- <script src="./modul/4.js" type="module"></script> -->
-    <script src="./modul/6.0/01-query-selectors.js" type="module"></script>
+    <!--! <script src="./modul/6.0/01-query-selectors.js" type="module"></script> -->
     <!-- <script src="./modul/6.0/02-properties.js" type="module"></script> -->
     <!-- <script src="./modul/6.0/03-classlist.js" type="module"></script> -->
     <!-- <script src="./modul/6.0/04-dom-traversal.js" type="module"></script> -->
@@ -59,6 +225,7 @@ https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
     <!-- <script src="./modul/6.0/07-products.js" type="module"></script> -->
     <!-- <script src="./modul/6.0/08-templating.js" type="module"></script> -->
     <!-- <script src="./modul/6.0/09-transactions.js" type="module"></script> -->
+    <script src="./modul/6.0/10-dmytro-tarhan.js" type="module"></script>
     <!-- <script src="./modul/5.0.js/this.js" type="module"></script> -->
     <!-- <script src="./modul/5.0.js/extends_super.js" type="module"></script> -->
     <!-- <script src="./modul/5.0.js/prototype_obyect.js" type="module"></script> -->

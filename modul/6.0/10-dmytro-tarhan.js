@@ -19,19 +19,19 @@
 //   this.textContent = '💥Magik💥';
 // }
 
-let count = 0;
-const buttonElement = document.querySelector('button');
-const counterElement = document.querySelector('.counter');
-buttonElement.addEventListener('click', buttonClick);
-buttonElement.addEventListener('click', showMessage);
-function showMessage() {
-    console.log('hallo')
-}
-function buttonClick() {
-  if (count > 19) {
-    buttonElement.removeEventListener('click', buttonClick);
-    return;
-  }
-  count += 1;
-  counterElement.textContent = count;
-}
+// let count = 0;
+// const buttonElement = document.querySelector('button');
+// const counterElement = document.querySelector('.counter');
+// buttonElement.addEventListener('click', buttonClick);
+// buttonElement.addEventListener('click', showMessage);
+// function showMessage() {
+//     console.log('hallo')
+// }
+// function buttonClick() {
+//   if (count > 19) {
+//     buttonElement.removeEventListener('click', buttonClick);
+//     return;
+//   }
+//   count += 1;
+//   counterElement.textContent = count;
+// }

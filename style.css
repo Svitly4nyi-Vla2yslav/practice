@@ -1,96 +1,6 @@
-/* ======================================
 
-1 - Imported Fonts
-
- ===================================== */
-
- @import url("https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap");
-
- @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
- @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap");
  
- @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
- 
- /* ======================================
- 
- 2 - General Properties
- 
-  ===================================== */
- 
- body {
-     font-family: "Playfair Display", serif;
-     font-size: 1rem;
-     margin: auto;
-     min-width: 320px;
-     max-width: 1024px;
-     background-color: #eeeeee;
- }
- 
- blockquote {
-     font-family: "Dancing Script", cursive;
-     font-size: 1.5rem;
-     color: #555555;
- }
- 
- hr {
-     border: 0.5px dotted #bbbbbb;
- }
- 
- /* ======================================
- 
- 3 - Element-specific properties
- 
-  ===================================== */
- 
- #main {
-     width: 85%;
-     height: 100%;
-     margin: auto;
-     background-color: white;
-     padding: 20px;
-     box-shadow: 0px 0px 10px hsl(0, 0%, 80%);
- }
- 
- #title {
-     text-align: center;
-     font-family: "Pinyon Script", cursive;
-     font-size: 4rem;
- }
- 
- #img-div {
-     text-align: center;
-     margin: auto;
- }
- 
- #img-div img {
-     max-width: 100%;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     box-shadow: 0px 5px 10px hsl(0, 0%, 80%);
- }
- 
- #img-caption {
-     margin-top: 5px;
-     font-size: 0.9rem;
-     font-style: italic;
- }
- 
- #tribute-info {
-     text-align: center;
-     width: 75%;
-     margin: auto;
- }
- 
- #tribute-info ul {
-     text-align: left;
- }
- 
- #tribute-info li {
-     /* css goes here */
- }
- 
- #intro {
+ /* #intro {
      margin: 30px auto 30px auto;
      font-size: 1rem;
      font-style: italic;
@@ -103,14 +13,14 @@
      background-repeat: no-repeat;
      background-size: contain;
  }
- 
+  */
  /* ======================================
  
  4 - Media queries
  
   ===================================== */
  
- @media screen and (max-width: 440px) {
+ /* @media screen and (max-width: 440px) {
      #title {
          text-align: center;
          font-family: "Pinyon Script", cursive;
@@ -139,9 +49,9 @@
  
      #intro {
          font-size: 0.9rem;
-     }
- }
- .modal {
+     } */
+ /* } */
+ /* .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -213,4 +123,120 @@ label span {
     color: red;
     margin-top: 4px;
     align-self: center;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 240px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form button {
+    align-self: center;
+    min-height: 30px;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+input {
+    margin-left: 16px;
+    width: 100%;
+    min-height: 24px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+label:last-child {
+    margin-bottom: 0;
+}
+
+label span {
+    min-width: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    margin-top: 4px;
+    align-self: center;
+}
+
+.image-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image-list .image-item {
+    padding: 25px;
+    width: 50%;
+}
+
+.image-list img {
+    cursor: pointer;
+    width: 100%;
+}
+
+.element-1 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+}
+
+.element-2 {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background: lightblue;
+}
+
+.element-3 {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background: lightcoral;
 }

@@ -1,4 +1,12 @@
 // const scrollElem = document.querySelector('.scroll');
+// const scrollValueElem = document.querySelector('.scroll-value')
+// const throttleHandler = _.throttle(setScrollValue, 700, {leadin: false})
+// scrollElem.addEventListener('scroll', throttleHandler)
+// function setScrollValue(event) {
+//     scrollValueElem.textContent = `${Math.ceil(scrollElem.scrollTop)}px`;
+// }
+
+// const scrollElem = document.querySelector('.scroll');
 // const scrollValueElem = document.querySelector('.scroll-value');
 //
 // const throttleHandler = _.throttle(setScrollValue, 500, { leading: false });
@@ -9,6 +17,29 @@
 //   scrollValueElem.textContent = `${Math.ceil(scrollElem.scrollTop)}px`
 // }
 
+// const loginElem = document.querySelector('input[name="login"]');
+// const passwordElem = document.querySelector('input[name="password"]');
+// const debounceHandler = _.debounce(checkValidation, 300);
+// loginElem.addEventListener('input', debounceHandler);
+// passwordElem.addEventListener('input', debounceHandler);
+
+// function checkValidation(event) {
+//   console.log(event);
+//   console.log(event.target.name);
+//   if (event.target.name === 'login') {
+//     event.target.value.length < 10
+//       ? (loginElem.nextElementSibling.textContent =
+//           'Field lenght must be min 10 chars')
+//       : (loginElem.nextElementSibling.textContent = '');
+//   } else {
+//     event.target.value.length < 15
+//       ? (passwordElem.nextElementSibling.textContent =
+//           'Field lenght must be min 15 chars')
+//       : (passwordElem.nextElementSibling.textContent = '');
+//   }
+// }
+
+
 // const inputElem = document.querySelector('input');
 // const searchValueElem = document.querySelector('.search-value');
 // const debounceHandler = _.debounce(setSearchValue, 500, { maxWait: 2000 });
@@ -17,10 +48,18 @@
 //   searchValueElem.textContent = inputElem.value;
 // }
 
-const lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
-  captionDelay: 250
-});
+// const lightbox = new SimpleLightbox('.gallery a', {
+//   captionsData: 'alt',
+//   captionDelay: 250,
+// });
+
+// document.addEventListener('keyup', closeGallery);
+// function closeGallery(event) {
+//   console.log(event.code);
+//   if (event.code === 'Space') {
+//     lightbox.close()
+//   }
+// }
 //
 // document.addEventListener('keyup', closeGallery);
 // function closeGallery(event) {
@@ -147,7 +186,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
 //   ]
 // }
 
-
 // const articleElem = document.querySelector('.article');
 
 // // МЕТОД ДЛЯ ПОШУКУ ОСТАННЬОГО ВУЗЛОВОГО ЕЛЕМЕНТА В БЛОЦІ articleElem
@@ -181,5 +219,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
 //     observer.observe(getLastElem());
 //   }
 // }
-
-

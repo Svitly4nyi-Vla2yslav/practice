@@ -8,5 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vladyslav Svitlychnyi <svetli4nuyvla2islav@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }

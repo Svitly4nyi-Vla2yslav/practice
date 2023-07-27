@@ -72,3 +72,34 @@
 // function addActiveCardClass(card) {
 //   card.classList.add('is-active');
 // }
+// Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+// console.log(promise)
+
+// const startBtn = document.querySelector('.js-start');
+// const stopBtn = document.querySelector('.js-stop');
+// let timerId = null;
+
+// startBtn.addEventListener('click', () => {
+//   timerId = setInterval(() => {
+//     return `#${Math.floor(Math.random() * 16777215)
+//       .toString(16)
+//       .padStart(6, 0)}`;
+//   }, 1000);
+// });
+// function getRandomHexColor() {}
+
+// stopBtn.addEventListener('click', () => {
+//   clearInterval(timerId);
+//   console.log(`Interval with id ${timerId} has stopped!`);
+// });

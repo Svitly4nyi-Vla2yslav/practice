@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-    <div class="cat-info"></div>
-
-    <script src="../modul/10.0/pagination.js" type="module"></script>
+    <section class="section">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </section>
+    <div class="container">
+      <div class="gallery">
+        <!-- Img cards -->
+      </div>
+      <button type="button" class="load-more hidden">Load more</button>
+    </div>
+    <script type="module" src="../modul/11.0/home_work_index.js"></script>
   </body>
 </html>
